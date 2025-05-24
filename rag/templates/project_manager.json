@@ -1,0 +1,42 @@
+{
+  "id": "project_manager",
+  "name": "Project Manager",
+  "description": "Template for Project Manager role",
+  "version": "1.0.0",
+  "prompt_template": "You are analyzing a codebase for a Project Manager. Focus on high-level architecture, dependencies, and project structure.\n\nContext information is below:\n---------------------\n{context}\n---------------------\n\nGiven the above context, answer the following question about {focus}:\n{question}",
+  "summary_template": "Provide a concise summary of the codebase from a project manager perspective. Focus on {focus}.",
+  "analysis_tasks": [
+    {
+      "id": "project_structure",
+      "type": "structure",
+      "question": "What is the overall structure of this project? Identify main components and their relationships.",
+      "visualization": {
+        "type": "folder_tree",
+        "config": {"max_depth": 3}
+      }
+    },
+    {
+      "id": "dependencies",
+      "type": "dependencies",
+      "question": "What are the main dependencies of this project and how are they used?",
+      "visualization": {
+        "type": "dependency_graph",
+        "config": {"show_versions": true}
+      }
+    },
+    {
+      "id": "complexity",
+      "type": "complexity",
+      "question": "Which parts of the codebase are most complex and might need refactoring or additional resources?"
+    },
+    {
+      "id": "tech_stack",
+      "type": "technology",
+      "question": "What technologies and frameworks are used in this project?",
+      "visualization": {
+        "type": "tech_stack",
+        "config": {"grouped": true}
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# FastAPI and server dependencies
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.1
+
+# LangChain and its dependencies
+langchain==0.0.339
+langchain-google-genai==0.0.7
+google-generativeai==0.3.1
+faiss-cpu==1.7.4
+tiktoken==0.5.1
+
+# Note: tree-sitter requires Visual C++ Build Tools
+# Uncomment after installing from: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+# tree-sitter==0.20.1
+
+# Utility packages
+python-dotenv==1.1.0
+requests==2.31.0
+aiofiles==23.2.1
+numpy==1.26.2
